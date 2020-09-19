@@ -73,7 +73,7 @@
                                         }
                                     ?>
                                         <!-- Product Starts -->
-                                        <div class="row">
+                                        <div class="row" id=<?php echo "product-" . $product['id'] ?>>
                                             <div class="col-3">
                                                 <img class="img-responsive" src=<?php echo $product['image_dir'] ?> alt="preview" width="120" height="120">
                                             </div>
@@ -85,7 +85,7 @@
                                                         </span> BDT</strong></h6>
                                             </div>
                                             <div class="col-1 text-right my-auto">
-                                                <button type="button" class="btn btn-outline-danger btn-xs remove-product">
+                                                <button type="button" class="btn btn-outline-danger btn-xs remove-product" data-product_id=<?php echo $product['id'] ?>>
                                                     <i class="fa fa-trash" aria-hidden="true"></i>
                                                 </button>
                                             </div>
